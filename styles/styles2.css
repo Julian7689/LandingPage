@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400&display=swap');
+@font-face {
+    font-family: 'Fuente del logo';
+    src: url(/styles/tan-nimbus.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    position: relative;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Fuente del logo', sans-serif;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 93%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.login-form i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000; /* Cambia el color según tus preferencias */
+    cursor: pointer;
+}
+.btn-continuar {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-continuar:hover {
+    background-color: #333;
+}
+
+.continue-with {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-social {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration:none;
+}
+
+.btn-social:hover {
+    background-color: #f0f0f0;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.help-link, .create-account-link {
+    color: black;
+    text-decoration: none;
+}
+
+.separator {
+    color: #999;
+}
+
+.brand-footer {
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Fuente del logo', sans-serif;
+}
+
+@media(max-width: 640px){
+    .login-form input {
+        margin-left: -67px;
+        width: 129%;
+        padding: 19px;
+        margin-bottom: 74px;
+        border: 1px solid #ddd;
+        border-radius: 65px;
+        font-size: 26px;
+    }
+    .login-container {
+        position: relative;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 174px;
+        width: 415px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .title {
+        font-size: 75px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: 'Fuente del logo', sans-serif;
+    }
+    .btn-social {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        background-color: white;
+        color: black;
+        font-size: 24px;
+        cursor: pointer;
+        border-radius: 64px;
+        text-decoration: none;
+    }
+    .subtitle {
+        font-size: 35px;
+        margin-bottom: 18px;
+    }
+    
+}
